@@ -1,0 +1,27 @@
+# ===== Artefak Python =====
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ===== Figur hasil generate di root (artefak; versi kurasi ada di docs/images) =====
+/*.png
+
+# ===== Materi referensi mentah (tidak di-push: berkas besar / hak cipta) =====
+Konteks/
+Jurnal Referensi/
+*.zip
+
+# ===== Setelan lokal & draf internal tim =====
+.claude/
+Konten_Laporan_Tim.md
+
+# ===== Laporan versi lama / catatan internal kolaborasi =====
+LAPORAN_SIMULASI.md
+PATCH_UPDATE.md
+
+# ===== OS =====
+Thumbs.db
+.DS_Store
+desktop.ini
