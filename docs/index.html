@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Analisis dan Sintesis Proyek PV-EC · Kelompok 3 PFEL</title>
-<meta name="description" content="Integrasi Panel Surya pada Sistem Carbon Capture untuk Konversi CO2 menjadi Oksigen melalui Artificial Photosynthesis. Analisis dan Sintesis, Kelompok 3 PFEL.">
+<title>Integrasi Panel Surya pada Sistem Carbon Capture · Kelompok 3 PFEL</title>
+<meta name="description" content="Integrasi Panel Surya pada Sistem Carbon Capture untuk Konversi CO2 menjadi Oksigen melalui Artificial Photosynthesis. Laporan Kelompok 3 PFEL, Program Studi Fisika, Universitas Padjadjaran.">
 <script>
   MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['$$','$$']], tags: 'none' },
               svg: { fontCache: 'global' } };
@@ -23,32 +23,34 @@
     font-size:16px; line-height:1.72;
   }
   .sidebar{
-    position:fixed; top:0; left:0; width:300px; height:100vh; overflow-y:auto;
+    position:fixed; top:0; left:0; width:312px; height:100vh; overflow-y:auto;
     background:var(--side); border-right:1px solid var(--border);
   }
   .sidebar .head{ padding:24px 22px 18px; border-bottom:1px solid var(--border); }
   .sidebar .head .t{ font-weight:700; font-size:15px; color:#000; line-height:1.42; display:block; }
   .sidebar .head .s{ font-size:12.5px; color:var(--faint); display:block; margin-top:8px; line-height:1.5; }
   .sidebar nav{ padding:10px 10px 70px; }
-  .sidebar nav a{ display:block; padding:6px 14px; color:#111; text-decoration:none;
-                  font-size:14px; border-radius:4px; }
+  .sidebar nav a{ display:block; padding:5px 14px; color:#111; text-decoration:none;
+                  font-size:13.5px; border-radius:4px; line-height:1.4; }
   .sidebar nav a:hover{ background:var(--side-hover); }
-  .sidebar nav a.sub{ padding-left:30px; font-size:13px; color:var(--muted); }
+  .sidebar nav a.sub{ padding-left:30px; font-size:12.5px; color:var(--muted); }
   .sidebar nav .sec{ font-size:11px; letter-spacing:.05em; text-transform:uppercase;
                      color:var(--faint); padding:16px 14px 4px; font-weight:600; }
 
-  .content{ margin-left:300px; }
+  .content{ margin-left:312px; }
   article{ max-width:820px; margin:0 auto; padding:44px 52px 120px; text-align:justify; }
 
-  h1{ font-size:26px; line-height:1.32; margin:0 0 6px; color:#000; font-weight:700; }
-  .subtitle{ font-size:17px; font-style:italic; color:var(--muted); margin:0 0 18px; }
+  h1{ font-size:25px; line-height:1.34; margin:0 0 6px; color:#000; font-weight:700; }
+  .subtitle{ font-size:16px; font-style:italic; color:var(--muted); margin:0 0 6px; }
   h2{ font-size:22px; color:#000; font-weight:700; margin:46px 0 14px;
       padding-bottom:6px; border-bottom:1px solid var(--border); }
-  h3{ font-size:17px; color:#000; font-weight:700; margin:30px 0 10px; }
+  h3{ font-size:17.5px; color:#000; font-weight:700; margin:30px 0 10px; }
+  h4{ font-size:15.5px; color:#000; font-weight:700; margin:22px 0 8px; }
   p{ margin:12px 0; }
   ul,ol{ margin:12px 0; padding-left:26px; text-align:justify; }
   li{ margin:6px 0; }
   a{ color:#000; text-decoration:underline; }
+  .lead{ font-style:italic; color:var(--muted); }
 
   table{ border-collapse:collapse; width:100%; margin:20px 0; font-size:14.5px; text-align:left; }
   caption{ caption-side:top; font-style:italic; font-size:14px; text-align:left;
@@ -82,26 +84,46 @@
 
 <aside class="sidebar">
   <div class="head">
-    <span class="t">Analisis dan Sintesis Proyek PV-EC</span>
-    <span class="s">Integrasi Panel Surya pada Sistem Carbon Capture untuk Konversi CO₂ menjadi Oksigen melalui Artificial Photosynthesis. Kelompok 3, PFEL.</span>
+    <span class="t">Integrasi Panel Surya pada Sistem Carbon Capture</span>
+    <span class="s">Konversi CO₂ menjadi Oksigen melalui Artificial Photosynthesis. Kelompok 3, Program Studi Fisika, Universitas Padjadjaran.</span>
   </div>
   <nav>
-    <div class="sec">Pendahuluan</div>
-    <a href="#umum">Informasi Umum</a>
-    <a href="#bab1">I. Latar Belakang</a>
-    <a href="#bab2">II. Rumusan Masalah</a>
-    <a href="#bab3">III. Tujuan Kajian</a>
-    <div class="sec">Hasil dan Pembahasan</div>
-    <a href="#bab4">IV. Analisis dan Sintesis</a>
-    <a class="sub" href="#aspekA">A. Aspek Teknis dan Fisika</a>
-    <a class="sub" href="#aspekB">B. Aspek Ekonomi dan Lingkungan</a>
-    <a class="sub" href="#aspekC">C. Aspek Sosial dan Regulasi</a>
-    <a class="sub" href="#aspekD">D. Visualisasi Hasil Simulasi</a>
-    <div class="sec">Penutup</div>
-    <a href="#bab5">V. Kesimpulan dan Rekomendasi</a>
-    <a href="#bab6">VI. Daftar Referensi</a>
-    <a href="#bab7">VII. Persamaan Kunci</a>
-    <a href="#bab8">VIII. Konstanta dan Parameter</a>
+    <div class="sec">Awal</div>
+    <a href="#umum">Halaman Judul</a>
+    <a href="#abstrak">Abstrak</a>
+    <div class="sec">Bab I · Pendahuluan</div>
+    <a href="#s11">1.1 Latar Belakang</a>
+    <a href="#s12">1.2 Rumusan Masalah</a>
+    <a href="#s13">1.3 Tujuan Penelitian / Tujuan Proyek</a>
+    <div class="sec">Bab II · Metode Kajian</div>
+    <a href="#s21">2.1 Pendekatan Kajian</a>
+    <a href="#s22">2.2 Konversi Fotovoltaik dan Batas Shockley-Queisser</a>
+    <a href="#s23">2.3 Pengaruh Temperatur terhadap Kinerja Sel Surya</a>
+    <a href="#s24">2.4 Penjejakan Titik Daya Maksimum (MPPT)</a>
+    <a href="#s25">2.5 Termodinamika Elektrokimia: Pemecahan Air dan Persamaan Nernst</a>
+    <a href="#s26">2.6 Kinetika Elektroda: Overpotensial, Persamaan Tafel, dan Peran Katalis</a>
+    <a href="#s27">2.7 Hukum Faraday, Efisiensi Faraday, dan Selektivitas Katoda</a>
+    <a href="#s28">2.8 Penangkapan Karbon Langsung (DAC) dan Energi Regenerasi</a>
+    <a href="#s29">2.9 Metrik Tekno-ekonomi: LCOP versus LCOD</a>
+    <a href="#s210">2.10 Nomenklatur dan Parameter Model</a>
+    <div class="sec">Bab III · Hasil dan Pembahasan</div>
+    <a href="#s31">3.1 Hasil Kajian</a>
+    <a class="sub" href="#s311">3.1.1 Hasil Skenario Harian</a>
+    <a class="sub" href="#s312">3.1.2 Hasil Skenario Tahunan</a>
+    <a class="sub" href="#s313">3.1.3 Diagram Alir Program Tahunan</a>
+    <a class="sub" href="#s314">3.1.4 Visualisasi Hasil</a>
+    <a href="#s32">3.2 Pembahasan</a>
+    <a class="sub" href="#s321">3.2.1 Arsitektur Model</a>
+    <a class="sub" href="#s322">3.2.2 Diagram Alir Energi (Energy Cascade)</a>
+    <a class="sub" href="#s323">3.2.3 Pemodelan Variasi Musim (Skenario Tahunan)</a>
+    <div class="sec">Bab IV · Penutup</div>
+    <a href="#s41">4.1 Kesimpulan</a>
+    <a class="sub" href="#s411">4.1.1 Keunggulan Sistem</a>
+    <a class="sub" href="#s412">4.1.2 Kelemahan dan Kendala</a>
+    <a class="sub" href="#s413">4.1.3 Penutup</a>
+    <a href="#s42">4.2 Rekomendasi</a>
+    <div class="sec">Pustaka</div>
+    <a href="#pustaka">Daftar Pustaka</a>
   </nav>
 </aside>
 
@@ -109,14 +131,12 @@
 <article>
 
   <h1>Integrasi Panel Surya pada Sistem Carbon Capture untuk Konversi CO₂ menjadi Oksigen melalui Artificial Photosynthesis</h1>
-  <p class="subtitle">Hasil dan Pembahasan: Analisis dan Sintesis. Proyek Akhir Pengantar Energi, Program Studi Fisika, Kelompok 3 (PFEL).</p>
+  <p class="subtitle">Proyek Akhir Mata Kuliah Pengantar Energi. Program Studi S1 Fisika, Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Padjadjaran.</p>
 
-  <!-- ===== INFORMASI UMUM ===== -->
-  <h2 id="umum">Informasi Umum</h2>
-  <p><strong>Judul Proyek:</strong> Integrasi Panel Surya pada Sistem Carbon Capture untuk Konversi CO₂
-  menjadi Oksigen melalui Artificial Photosynthesis.</p>
-  <table style="max-width:460px;">
-    <caption>Anggota Kelompok 3.</caption>
+  <!-- ===== HALAMAN JUDUL ===== -->
+  <h2 id="umum">Halaman Judul</h2>
+  <table style="max-width:520px;">
+    <caption>Penyusun, Kelompok 3 (PFEL).</caption>
     <thead><tr><th>Nama</th><th>NPM</th></tr></thead>
     <tbody>
       <tr><td>Sandy Fauzi Amrulloh</td><td>140310240054</td></tr>
@@ -126,34 +146,60 @@
     </tbody>
   </table>
 
-  <!-- ===== I. LATAR BELAKANG ===== -->
-  <h2 id="bab1">I. Latar Belakang</h2>
+  <!-- ===== ABSTRAK ===== -->
+  <h2 id="abstrak">Abstrak</h2>
+  <p>Penelitian berbasis simulasi ini memodelkan kinerja sistem terintegrasi Fotovoltaik-Elektrokimia
+  (<em>Photovoltaic-Electrochemical</em>, PV-EC) yang menggabungkan pembangkit listrik tenaga surya, reaktor
+  elektrokimia, dan unit penangkapan karbon langsung dari udara (<em>Direct Air Capture</em>, DAC) untuk
+  mereduksi CO₂ menjadi bahan bakar terbarukan sekaligus menghasilkan O₂. Model dikembangkan sebagai simulasi
+  numerik <em>time-series</em> beresolusi satu menit yang mengimplementasikan tujuh persamaan tata kelola secara
+  dinamis, meliputi konversi fotovoltaik dengan koreksi termal, kinetika elektroda Butler-Volmer/Tafel,
+  persamaan Nernst, Hukum Faraday, serta neraca massa DAC. Dua skenario dijalankan, yaitu skenario harian
+  (24 jam) dan skenario tahunan (365 hari) dengan variasi musim iklim tropis. Untuk konfigurasi panel 10 m²,
+  simulasi memperoleh efisiensi konversi <em>sun-to-fuel</em> sebesar 8,8% (η_net 8,5% dengan beban regenerasi
+  DAC), dengan produksi O₂ 1.641 g per hari, penangkapan CO₂ 902 g per hari (terkonversi menjadi metanol), dan
+  H₂ 82 g per hari sebagai produk samping reaksi evolusi hidrogen. Pada skala tahunan diperoleh 453 kg O₂,
+  249 kg CO₂ tertangkap, dan 22,6 kg H₂, dengan produktivitas musim kemarau 25% lebih tinggi dibandingkan musim
+  hujan. Hasil ini konsisten dengan rentang efisiensi <em>sun-to-fuel</em> pada literatur (5 sampai 15%) dan
+  menegaskan kelayakan fisis sistem sekaligus mengidentifikasi keterbatasan utamanya, yaitu overpotensial anoda,
+  selektivitas katoda terbatas, beban energi regenerasi DAC, serta konsumsi air yang tinggi.</p>
+  <p><strong>Kata kunci:</strong> fotovoltaik-elektrokimia, <em>artificial photosynthesis</em>, <em>direct air
+  capture</em>, reduksi CO₂, efisiensi <em>sun-to-fuel</em>.</p>
+
+  <!-- ============================================================= -->
+  <!-- BAB I PENDAHULUAN                                              -->
+  <!-- ============================================================= -->
+  <h2 id="bab1">BAB I. PENDAHULUAN</h2>
+
+  <h3 id="s11">1.1 Latar Belakang</h3>
   <p>Peningkatan konsentrasi gas rumah kaca, khususnya karbon dioksida (CO₂), di atmosfer akibat pembakaran
   bahan bakar fosil telah memicu perubahan iklim global yang semakin mengkhawatirkan. Menurut Prats-Salvado
-  dkk. (2024), teknologi penangkapan karbon langsung dari udara atau <strong>Direct Air Capture (DAC)</strong>
+  dkk. (2024), teknologi penangkapan karbon langsung dari udara atau <em>Direct Air Capture</em> (DAC)
   merupakan salah satu pendekatan paling menjanjikan untuk mengurangi konsentrasi CO₂ atmosfer secara aktif.
-  Tantangan utama teknologi ini adalah kebutuhan energi operasionalnya yang sangat besar; penggunaan listrik
-  dari pembangkit fosil untuk menangkap emisi fosil justru menjadi sebuah ironi teknis.</p>
-  <p>Di sisi lain, perkembangan teknologi energi terbarukan, terutama <strong>Pembangkit Listrik Tenaga Surya
-  (PLTS)</strong>, membuka peluang untuk mengatasi hambatan tersebut. Panel surya (fotovoltaik) menghasilkan
-  arus searah (DC) bersih yang secara teknis kompatibel untuk menggerakkan sistem DAC maupun reaktor
-  elektrokimia. Dalam kerangka <strong>Artificial Photosynthesis (Fotosintesis Buatan)</strong>, energi surya
-  tidak hanya digunakan sebagai sumber daya, melainkan juga sebagai pemicu reaksi fotokatalitik yang meniru
-  prinsip fotosintesis alami pada tumbuhan, yaitu menyerap CO₂ dan air (H₂O) untuk menghasilkan oksigen (O₂)
-  dan molekul berenergi tinggi (Wang dan Pornrungroj, 2025).</p>
-  <p>Konsep integrasi ini dikenal sebagai sistem <strong>Fotovoltaik-Elektrokimia (PV-EC)</strong>. Panel
-  surya menyuplai listrik ke reaktor fotoelektrokimia yang bekerja secara dua fungsi sekaligus: menangkap CO₂
-  dari udara dan menghasilkan O₂ sebagai produk akhir. Tantangan teknis muncul dari sifat keluaran panel surya
-  yang fluktuatif akibat perubahan intensitas cahaya dan suhu, sehingga diperlukan komponen <strong>Maximum
-  Power Point Tracking (MPPT) Charge Controller</strong> yang meregulasi tegangan dan arus keluaran panel.</p>
+  Tantangan utama teknologi ini adalah kebutuhan energi operasionalnya yang sangat besar, menggunakan listrik
+  dari pembangkit fosil untuk menangkap emisi fosil justru menjadi sebuah ironi teknis yang menjadi kendala
+  terbesar dalam masalah iklim.</p>
+  <p>Di sisi lain, perkembangan teknologi energi terbarukan, terutama Pembangkit Listrik Tenaga Surya (PLTS),
+  membuka peluang untuk mengatasi hambatan tersebut. Panel surya (fotovoltaik) menghasilkan arus searah (DC)
+  bersih yang secara teknis kompatibel untuk menggerakkan sistem DAC maupun reaktor elektrokimia. Lebih jauh,
+  dalam kerangka <em>Artificial Photosynthesis</em> (Fotosintesis Buatan), energi surya tidak hanya digunakan
+  sebagai sumber daya, melainkan juga sebagai pemicu reaksi fotokatalitik yang meniru prinsip fotosintesis
+  alami pada tumbuhan, yaitu menyerap CO₂ dan air (H₂O) untuk menghasilkan oksigen (O₂) dan molekul berenergi
+  tinggi (Wang dan Pornrungroj, 2025).</p>
+  <p>Konsep integrasi ini dikenal sebagai sistem Fotovoltaik-Elektrokimia (PV-EC). Dalam skema ini, panel surya
+  menyuplai listrik ke reaktor fotoelektrokimia yang bekerja secara dua fungsi sekaligus, yaitu menangkap CO₂
+  dari udara dan menghasilkan O₂ sebagai produk akhir. Namun, tantangan teknis yang nyata muncul dari sifat
+  keluaran panel surya yang fluktuatif akibat perubahan intensitas cahaya dan suhu. Untuk menjaga stabilitas
+  reaksi di dalam reaktor, diperlukan komponen <em>Maximum Power Point Tracking</em> (MPPT) <em>Charge
+  Controller</em> yang meregulasi tegangan dan arus keluaran panel.</p>
 
-  <!-- ===== II. RUMUSAN MASALAH ===== -->
-  <h2 id="bab2">II. Rumusan Masalah</h2>
+  <h3 id="s12">1.2 Rumusan Masalah</h3>
+  <p>Berdasarkan latar belakang di atas, rumusan masalah dalam proyek ini adalah sebagai berikut:</p>
   <ol>
     <li>Bagaimana cara kerja rangkaian kelistrikan sistem PLTS off-grid dalam menyuplai daya DC secara stabil
-    untuk sistem carbon capture dan reaktor artificial photosynthesis?</li>
-    <li>Bagaimana cara kerja reaktor artificial photosynthesis dalam mengonversi CO₂ menjadi oksigen (O₂),
-    serta faktor-faktor yang mempengaruhi efisiensinya?</li>
+    untuk sistem carbon capture dan reaktor <em>artificial photosynthesis</em>?</li>
+    <li>Bagaimana cara kerja reaktor <em>artificial photosynthesis</em> dalam mengonversi CO₂ menjadi oksigen
+    (O₂), serta faktor-faktor yang mempengaruhi efisiensinya?</li>
     <li>Bagaimana efisiensi keseluruhan sistem Fotovoltaik-Elektrokimia (PV-EC) dalam mengintegrasikan proses
     penangkapan dan konversi CO₂, termasuk ditinjau dari potensi kehilangan energi dalam sistem, serta
     bagaimana hal tersebut mempengaruhi kelayakan penerapannya sebagai solusi berkelanjutan?</li>
@@ -161,358 +207,523 @@
     oksigen (O₂) di lingkungan sekitar?</li>
   </ol>
 
-  <!-- ===== III. TUJUAN ===== -->
-  <h2 id="bab3">III. Tujuan Kajian</h2>
+  <h3 id="s13">1.3 Tujuan Penelitian / Tujuan Proyek</h3>
+  <p>Kajian ini bertujuan untuk:</p>
   <ol>
-    <li>Mengetahui cara kerja rangkaian kelistrikan sistem PLTS off-grid dalam menyuplai daya DC secara stabil
-    untuk mendukung operasional sistem carbon capture dan reaktor artificial photosynthesis.</li>
-    <li>Mengetahui cara kerja reaktor artificial photosynthesis dalam mengonversi CO₂ menjadi O₂ serta
+    <li>Mengetahui cara kerja rangkaian kelistrikan sistem PLTS <em>off-grid</em> dalam menyuplai daya DC secara
+    stabil untuk mendukung operasional sistem <em>carbon capture</em> dan reaktor <em>artificial
+    photosynthesis</em>.</li>
+    <li>Mengetahui cara kerja reaktor <em>artificial photosynthesis</em> dalam mengonversi CO₂ menjadi O₂ serta
     faktor-faktor yang mempengaruhi efisiensinya.</li>
-    <li>Mengetahui efisiensi keseluruhan sistem PV-EC dalam mengintegrasikan proses penangkapan dan konversi
-    CO₂, termasuk pengaruh kehilangan energi dalam sistem, serta dampaknya terhadap kelayakan penerapan sistem
-    sebagai solusi berkelanjutan.</li>
-    <li>Mengetahui dampak implementasi sistem PV-EC terhadap kualitas udara, khususnya dalam peningkatan kadar
-    oksigen (O₂) di lingkungan sekitar.</li>
+    <li>Mengetahui efisiensi keseluruhan sistem Fotovoltaik-Elektrokimia (PV-EC) dalam mengintegrasikan proses
+    penangkapan dan konversi CO₂, termasuk pengaruh kehilangan energi dalam sistem, serta dampaknya terhadap
+    kelayakan penerapan sistem sebagai solusi berkelanjutan.</li>
+    <li>Mengetahui dampak implementasi sistem Fotovoltaik-Elektrokimia (PV-EC) terhadap kualitas udara,
+    khususnya dalam peningkatan kadar oksigen (O₂) di lingkungan sekitar.</li>
   </ol>
 
-  <!-- ===== IV. HASIL DAN PEMBAHASAN ===== -->
-  <h2 id="bab4">IV. Hasil dan Pembahasan: Analisis dan Sintesis</h2>
+  <!-- ============================================================= -->
+  <!-- BAB II METODE KAJIAN                                           -->
+  <!-- ============================================================= -->
+  <h2 id="bab2">BAB II. METODE KAJIAN</h2>
 
-  <h3 id="aspekA">A. Aspek Teknis dan Fisika</h3>
+  <h3 id="s21">2.1 Pendekatan Kajian</h3>
+  <p>Kajian ini menggunakan pendekatan studi literatur dan simulasi berbasis komputasi untuk menganalisis
+  integrasi panel surya dengan sistem carbon capture dan artificial photosynthesis dalam suatu sistem
+  Fotovoltaik-Elektrokimia (PV-EC). Studi literatur dilakukan dengan mengumpulkan dan menelaah berbagai sumber
+  ilmiah berupa jurnal penelitian, buku referensi, serta publikasi terkait teknologi Direct Air Capture (DAC),
+  sistem Pembangkit Listrik Tenaga Surya (PLTS), Maximum Power Point Tracking (MPPT), dan artificial
+  photosynthesis. Hasil kajian literatur digunakan sebagai dasar dalam memahami prinsip kerja sistem,
+  menentukan parameter yang digunakan, serta menyusun model simulasi yang merepresentasikan kondisi operasional
+  sistem secara teoritis.</p>
+  <p>Berdasarkan hasil kajian tersebut, dilakukan pemodelan sistem yang menggambarkan hubungan antara panel
+  surya, MPPT charge controller, unit carbon capture, dan reaktor artificial photosynthesis. Model kemudian
+  diimplementasikan dalam bentuk simulasi berbasis komputasi untuk mengevaluasi aliran energi dan proses
+  konversi yang terjadi di dalam sistem. Simulasi menggunakan parameter yang diperoleh dari hasil studi
+  literatur, seperti intensitas radiasi matahari, efisiensi panel surya, kapasitas penangkapan CO₂, dan
+  efisiensi reaksi fotoelektrokimia.</p>
+  <p>Perlu diketahui bahwa kajian ini tidak melibatkan pembangunan prototipe maupun pengujian langsung pada
+  perangkat fisik. Seluruh analisis dilakukan melalui simulasi komputasi yang dirancang untuk menggambarkan
+  performa sistem secara teoritis. Hasil simulasi kemudian digunakan untuk mengevaluasi kemampuan sistem dalam
+  menyediakan daya listrik yang stabil, efektivitas penangkapan dan konversi CO₂ menjadi O₂, potensi kehilangan
+  energi pada setiap tahapan proses, serta kelayakan penerapan sistem PV-EC sebagai solusi berkelanjutan untuk
+  mendukung pengurangan emisi karbon dan peningkatan kualitas udara.</p>
 
-  <h4>A.1 Eksitasi Foton dan Mekanisme Transportasi Muatan</h4>
-  <p>PLTS beroperasi berlandaskan hukum Fisika Zat Padat dan mekanika kuantum, ketika radiasi matahari
-  berinteraksi dengan material semikonduktor dalam bentuk paket energi diskret (foton).</p>
+  <h3 id="s22">2.2 Konversi Fotovoltaik dan Batas Shockley-Queisser</h3>
+  <p>Sel surya bekerja berdasarkan efek fotovoltaik pada sambungan semikonduktor p-n. Radiasi surya
+  terkuantisasi dalam paket energi (foton); foton dengan energi melebihi celah pita (<em>band gap</em>) material
+  mampu mengeksitasi elektron dari pita valensi ke pita konduksi, menghasilkan pasangan elektron-lubang yang
+  dipisahkan oleh medan listrik internal sambungan p-n sehingga terbentuk arus DC.</p>
+  <p><strong>Definisi.</strong> Batas Shockley-Queisser (SQ), diturunkan oleh Shockley dan Queisser (1961)
+  melalui prinsip <em>detailed balance</em> (kesetimbangan rinci), menyatakan efisiensi konversi maksimum
+  teoretis sebuah sel surya sambungan-tunggal. Nilainya sekitar 33% (puncak sekitar 33,7% pada celah pita
+  optimal sekitar 1,34 eV; silikon dengan E_gap sekitar 1,1 eV mencapai sekitar 32%). Batas ini bersifat
+  fundamental, ia bukan keterbatasan mutu fabrikasi, melainkan konsekuensi fisika ketidaksesuaian antara
+  spektrum surya yang lebar dengan celah pita material yang tunggal dan tetap.</p>
+  <p><strong>Mekanisme kehilangan.</strong> Dua rugi utama bersifat saling berlawanan terhadap pemilihan celah
+  pita:</p>
   <ul>
-    <li><strong>Interaksi Foton-Elektron.</strong> Ketika foton menumbuk permukaan panel surya (berbasis
-    silikon p-n junction), foton tersebut harus memiliki energi kuantum yang setara atau melebihi celah pita
-    energi material semikonduktor (\(E_\text{foton} \ge E_\text{gap}\)). Penyerapan energi ini memicu transisi
-    elektronik, menyebabkan elektron tereksitasi dari pita valensi melampaui celah pita energi menuju pita
-    konduksi dan menjadi elektron bebas (Rudiyanto dkk., 2023).</li>
-    <li><strong>Pemisahan Pasangan Muatan.</strong> Transisi elektronik ini meninggalkan kekosongan bermuatan
-    positif (lubang) di pita valensi. Pemisahan pasangan muatan elektron lubang menciptakan medan listrik
-    internal pada sambungan p-n, yang mencegah muatan berekombinasi secara prematur dan mendorong elektron
-    mengalir melalui sirkuit eksternal (Rauf dkk., 2023).</li>
-    <li><strong>Dinamika Daya dan Peran MPPT.</strong> Aliran elektron menghasilkan arus searah (DC) dengan
-    keluaran daya yang didefinisikan oleh Persamaan (1.1).</li>
+    <li><strong>Rugi transmisi (sub-celah pita):</strong> foton dengan E_foton kurang dari E_gap tidak memiliki
+    energi cukup untuk mengeksitasi elektron sehingga diteruskan tanpa terserap.</li>
+    <li><strong>Rugi termalisasi:</strong> foton dengan E_foton lebih dari E_gap mengeksitasi elektron, tetapi
+    kelebihan energi (E_foton dikurangi E_gap) terdisipasi sebagai panas ketika elektron berelaksasi ke tepi
+    pita konduksi.</li>
   </ul>
-  $$P = V \times I \qquad\qquad (1.1)$$
-  <p>Intensitas iradiasi (W per m²) dan temperatur sel berfluktuasi secara real-time. Modul MPPT secara
-  konstan memantau fluktuasi ini dan mengubah impedansi sirkuit agar panel surya terus beroperasi tepat pada
-  titik P_maks dalam kurva tegangan arus (I-V), memastikan suplai energi ke reaktor tetap pada batas maksimum
-  teoritisnya (Rauf dkk., 2023).</p>
+  <p>Keduanya menimbulkan dilema celah pita: E_gap kecil menyerap lebih banyak foton namun menghasilkan
+  tegangan rendah (termalisasi besar), sedangkan E_gap besar menghasilkan tegangan tinggi namun menyerap lebih
+  sedikit foton (transmisi besar). Nilai optimum yang menyeimbangkan keduanya menghasilkan batas sekitar 33%.
+  Ditambahkan pula rekombinasi radiatif yang tak terhindarkan (konsekuensi <em>detailed balance</em>: penyerap
+  yang baik juga pemancar yang baik) serta rugi tegangan termodinamik (faktor Boltzmann), sehingga tegangan
+  keluaran selalu lebih rendah daripada tegangan setara celah pita.</p>
+  <table>
+    <caption>Tabel 2.1. Distribusi energi spektrum surya pada sel sambungan-tunggal (perkiraan).</caption>
+    <thead><tr><th>Nasib energi foton</th><th>Porsi relatif</th></tr></thead>
+    <tbody>
+      <tr><td>Diteruskan (E_foton kurang dari E_gap)</td><td>sekitar 20%</td></tr>
+      <tr><td>Terdisipasi sebagai panas (termalisasi)</td><td>sekitar 30%</td></tr>
+      <tr><td>Rekombinasi radiatif dan rugi tegangan</td><td>sekitar 17%</td></tr>
+      <tr><td><strong>Terkonversi menjadi listrik (Batas SQ)</strong></td><td><strong>sekitar 33%</strong></td></tr>
+    </tbody>
+  </table>
+  <p>Modul silikon komersial pada praktiknya beroperasi pada efisiensi sekitar 20%, yakni di bawah plafon
+  teoretis akibat rugi tambahan (resistansi seri, refleksi permukaan, dan rekombinasi non-radiatif). Pada model
+  ini efisiensi referensi ditetapkan η_PV,ref = 20%, sedangkan batas SQ 33% digunakan sebagai garis acuan
+  teoretis pada grafik efisiensi. Batas ini hanya dapat dilampaui dengan arsitektur sel tandem/multi-sambungan
+  yang menumpuk beberapa celah pita untuk memanen porsi spektrum yang lebih lebar (lebih dari 40%), namun dengan
+  kompleksitas dan biaya yang jauh lebih tinggi (Rudiyanto dkk., 2023; Rauf dkk., 2023).</p>
 
-  <h4>A.2 Konversi Termodinamika dan Kinetika Elektrokimia</h4>
-  <p>Sistem PV-EC mengubah peran kelistrikan PLTS dari sekadar penyuplai daya rumah tangga menjadi penggerak
-  reaksi redoks dalam sistem artificial photosynthesis. Alur konversi mengikuti skema Energi Surya →
-  Listrik DC → Energi Kimia.</p>
-  <ul>
-    <li><strong>Termodinamika Reaksi Up-Hill.</strong> Reaksi pemecahan air (H₂O) dan reduksi CO₂ merupakan
-    reaksi non-spontan yang sangat endotermik (\(\Delta G > 0\)). Pemecahan H₂O menjadi H₂ dan O₂ menuntut
-    perubahan energi bebas Gibbs standar sebesar ΔG° = 237,13 kJ per mol, ekuivalen dengan tegangan
-    termodinamika minimum sebesar 1,23 V (Whang dan Apaydin, 2018).</li>
-    <li><strong>Intervensi Hukum Nernst.</strong> Untuk membalikkan keadaan termodinamika ini, energi dari
-    luar diinjeksikan, direpresentasikan oleh korelasi elektrokimia Nernst pada Persamaan (1.2).</li>
-  </ul>
-  $$\Delta G = -nFE \qquad\qquad (1.2)$$
-  <p>dengan n adalah mol elektron, F konstanta Faraday, dan E potensial sel. Arus DC dari PLTS menyediakan
-  beda potensial (E) ini. Potensial tegangan berlebih (overpotential) yang diinduksi oleh listrik surya
-  menekan nilai ΔG sistem menjadi negatif, sehingga reaksi dapat dilangsungkan secara paksa (Prats-Salvado
-  dkk., 2024).</p>
-  <ul>
-    <li><strong>Tantangan Kinetika dan Peran Katalis.</strong> Meskipun termodinamika telah diatasi oleh
-    voltase PLTS, reaksi ini masih dihadapkan pada rintangan kinetik masif, terutama pada Oxygen Evolution
-    Reaction (OER) di anoda yang melibatkan transfer 4 elektron secara simultan (Nosaka, 2023). Diperlukan
-    fungsionalisasi permukaan menggunakan katalis nanopartikel untuk menurunkan energi aktivasi (E_a),
-    memfasilitasi transfer elektron yang cepat, dan meminimalkan energi terbuang menjadi panas (Martí dkk.,
-    2023).</li>
-  </ul>
+  <h3 id="s23">2.3 Pengaruh Temperatur terhadap Kinerja Sel Surya</h3>
+  <p>Efisiensi sel surya menurun terhadap kenaikan temperatur karena penyempitan celah pita dan peningkatan laju
+  rekombinasi. Hubungan ini dinyatakan melalui koefisien temperatur β:</p>
+  $$\eta_\text{PV}(T) = \eta_\text{PV,ref} \cdot \left[\, 1 - \beta \cdot (T_\text{sel} - 25^\circ\mathrm{C}) \,\right]$$
+  <p>dengan β sekitar 0,4 % per °C untuk silikon. Temperatur sel diperkirakan dari temperatur lingkungan dan
+  iradiasi melalui model NOCT (<em>Nominal Operating Cell Temperature</em>):</p>
+  $$T_\text{sel} = T_\text{amb} + \frac{(\mathrm{NOCT} - 20) \cdot G}{800}$$
+  <p>dengan NOCT sekitar 45 °C. Pada kondisi tengah hari tropis (T_sel sekitar 50 sampai 55 °C), efisiensi
+  efektif turun menjadi sekitar 17%. Faktor ini penting karena Indonesia beriklim panas, sehingga rugi termal
+  tidak dapat diabaikan. Secara mikroskopik, kenaikan temperatur memperkecil celah pita (E_gap) sehingga
+  tegangan rangkaian terbuka (V_oc) menurun, sementara arus hubung-singkat hanya naik tipis; efek netonya adalah
+  penurunan daya dan efisiensi. Implikasi praktisnya, sistem pendinginan/ventilasi panel dan pemilihan lokasi
+  berventilasi baik menjadi pertimbangan desain nyata di iklim tropis, dan menjadi salah satu alasan mengapa
+  efisiensi sistem aktual selalu lebih rendah daripada nilai nameplate panel (Wibowo, 2023; Rudiyanto dkk.,
+  2023).</p>
 
-  <h4>A.3 Reaksi Elektrokimia (Anoda dan Katoda)</h4>
-  <p>Reaksi elektrokimia dalam sistem artificial photosynthesis adalah proses konversi energi listrik menjadi
-  energi kimia melalui perpindahan elektron dan ion dalam suatu sel elektrolisis.</p>
-  <p><strong>Reaksi di Anoda (Oksidasi, OER):</strong></p>
-  $$2\,\mathrm{H_2O} \rightarrow \mathrm{O_2} + 4\,\mathrm{H^+} + 4\,e^- \qquad\qquad (1.3)$$
-  <p>Molekul air teradsorpsi pada situs aktif katalis, melepaskan elektron dan membentuk spesies antara (OH,
-  O, OOH) sebelum membentuk O₂. Proses ini melibatkan transfer muatan antar permukaan, perubahan energi
-  potensial permukaan, dan reorganisasi struktur molekul. Energi pemutusan ikatan O-H sangat besar sehingga
-  kehadiran katalis mutlak diperlukan.</p>
-  <p><strong>Dinamika Aliran Muatan.</strong> Elektron dari anoda mengalir melalui sirkuit eksternal menuju
-  katoda (mengikuti hukum Ohm), sedangkan proton (H⁺) bermigrasi melalui elektrolit akibat dorongan difusi dan
-  medan listrik.</p>
-  <p><strong>Reaksi di Katoda (Reduksi, CO₂RR):</strong></p>
-  $$\mathrm{CO_2} + 6\,\mathrm{H^+} + 6\,e^- \rightarrow \mathrm{CH_3OH} + \mathrm{H_2O} \qquad\qquad (1.4)$$
-  <p>Molekul CO₂ yang linear dan stabil harus teradsorpsi dan teraktivasi menjadi radikal antara untuk
-  melemahkan ikatan rangkap C=O. Serangkaian transfer proton dan elektron kemudian terjadi secara bertahap.
-  Efisiensi keseluruhan ditentukan oleh minimasi overpotential, penurunan resistansi ohmik, serta optimalisasi
-  transpor massa (difusi CO₂ ke permukaan elektroda).</p>
+  <h3 id="s24">2.4 Penjejakan Titik Daya Maksimum (MPPT)</h3>
+  <p>Keluaran daya panel bersifat fluktuatif terhadap iradiasi dan temperatur, sehingga kurva arus-tegangan
+  (I-V) memiliki satu titik daya maksimum (<em>Maximum Power Point</em>, MPP) yang berpindah-pindah. Pada kurva
+  I-V, daya (P = V·I) bernilai nol di kedua ujung yaitu pada kondisi hubung-singkat (V = 0) dan rangkaian
+  terbuka (I = 0) dan mencapai maksimum pada satu titik di antaranya. Letak MPP ini bergeser setiap kali
+  iradiasi atau temperatur berubah.</p>
+  <p>Modul MPPT (<em>Maximum Power Point Tracking</em>) berfungsi menjejak titik tersebut secara aktif melalui
+  konverter DC-DC, MPPT menyesuaikan impedansi beban secara <em>real-time</em> agar panel selalu beroperasi
+  tepat pada MPP. Tanpa penjejakan ini, panel sering bekerja jauh dari MPP sehingga menghasilkan daya suboptimal,
+  fenomena yang disebut <em>mismatch loss</em>, yang dapat mencapai sekitar 25%. Pada model, MPPT diasumsikan
+  ideal sehingga daya yang dipanen setara dengan daya maksimum teoritis panel; perbandingan kasus dengan dan
+  tanpa MPPT divisualkan pada grafik profil daya untuk menonjolkan kontribusinya (Rauf dkk., 2023).</p>
 
-  <figure>
-    <img src="images/poster_3_tegangan_sel.png" alt="Dekomposisi tegangan sel reaktor">
-    <figcaption><b>Gambar 1.</b> Dekomposisi tegangan sel reaktor pada simulasi numerik. Tegangan operasi
-    (sekitar 2,05 V) tersusun atas potensial reversibel 1,23 V ditambah overpotensial OER, overpotensial
-    CO₂RR, dan rugi ohmik. Selisih di atas 1,23 V terbuang sebagai panas, dengan overpotensial anoda (OER)
-    paling dominan.</figcaption>
-  </figure>
+  <h3 id="s25">2.5 Termodinamika Elektrokimia: Pemecahan Air dan Persamaan Nernst</h3>
+  <p>Reaksi pemecahan air dan reduksi CO₂ bersifat non-spontan (endergonik, ΔG lebih besar dari nol); reaksi
+  hanya berlangsung bila energi listrik diinjeksikan. Pemecahan air standar menuntut perubahan energi bebas
+  Gibbs ΔG° = 237,13 kJ per mol, ekuivalen dengan potensial sel reversibel minimum:</p>
+  $$E^{\circ}_\text{rev} = \frac{\Delta G^{\circ}}{n \cdot F} = 1{,}23\ \mathrm{V}$$
+  <p>dengan n = 2 (mol elektron per mol H₂) dan F konstanta Faraday. Potensial reversibel bergantung pada
+  temperatur menurut hubungan tipe Nernst yang diimplementasikan sebagai:</p>
+  $$E_\text{rev}(T) = 1{,}229 - 0{,}000846 \cdot (T - 298{,}15)\quad [\mathrm{V}]$$
+  <p>sehingga E_rev menurun perlahan seiring kenaikan temperatur reaktor. Potensial reversibel E_rev dapat
+  dimaknai sebagai harga energi minimum reaksi: di bawah nilai ini, reaksi tidak akan berlangsung maju betapapun
+  lamanya ditunggu, karena secara termodinamika tidak menguntungkan. Persamaan Nernst dalam bentuk lengkapnya
+  juga memuat pengaruh konsentrasi (aktivitas) reaktan dan produk terhadap potensial; namun dalam model ini
+  variasi yang dominan adalah temperatur, sehingga bentuk yang diimplementasikan menyederhanakan ketergantungan
+  konsentrasi tersebut. Nilai 1,23 V berlaku pada kondisi standar (25 °C); karena reaktor pada simulasi
+  beroperasi sedikit di atas suhu kamar (sekitar 35 °C), nilai E_rev efektif yang diperoleh adalah 1,219 V.
+  Penting dicatat bahwa 1,23 V hanyalah ambang termodinamika agar reaksi benar-benar berjalan pada laju yang
+  berarti, masih dibutuhkan tegangan tambahan yang dibahas pada subbab berikutnya (Whang dan Apaydin, 2018;
+  Wang dan Pornrungroj, 2025).</p>
 
-  <h4>A.4 Transpor Muatan dan Carbon Capture</h4>
-  <p><strong>Mekanisme Transpor Muatan.</strong> Elektron (e⁻) mengalir melalui rangkaian eksternal menuruni
-  gradien potensial listrik dari anoda ke katoda. Proton (H⁺) berdifusi dan bermigrasi melalui elektrolit,
-  sering melalui mekanisme Grotthuss (lompatan proton antar molekul air). Konduktivitas elektrolit dan suhu
-  mendikte resistansi internal.</p>
-  <p><strong>Mekanisme Carbon Capture (DAC).</strong> Molekul CO₂ berdifusi dari udara menuju larutan basa
-  (KOH) menuruni gradien konsentrasi, mengikuti Persamaan (1.5).</p>
-  $$\mathrm{CO_2} + 2\,\mathrm{KOH} \rightarrow \mathrm{K_2CO_3} + \mathrm{H_2O} \qquad\qquad (1.5)$$
-  <p>Senyawa karbonat yang terbentuk kemudian diregenerasi melalui pemanasan (kalsinasi) yang membutuhkan
-  transfer panas masif untuk memutus ikatan kimia dan melepaskan CO₂ murni ke dalam reaktor (Zhang dkk.,
-  2020).</p>
+  <h3 id="s26">2.6 Kinetika Elektroda: Overpotensial, Persamaan Tafel, dan Peran Katalis</h3>
+  <p>Secara praktis, tegangan operasi sel melampaui nilai termodinamika 1,23 V. Selisihnya disebut
+  <strong>overpotensial (η)</strong>, yaitu tegangan tambahan untuk mengatasi hambatan kinetik perpindahan
+  muatan; energi ini terdisipasi sebagai panas. Pada rapat arus tinggi, overpotensial mengikuti persamaan
+  <strong>Tafel</strong>:</p>
+  $$\eta(j) = \frac{R \cdot T}{\alpha \cdot F} \cdot \ln\!\left(\frac{j}{j_0}\right)$$
+  <p>dengan R konstanta gas, α koefisien transfer (sekitar 0,5), j rapat arus, dan j₀ rapat arus tukar
+  (<em>exchange current density</em>) yang mencerminkan keaktifan katalis. Persamaan ini menunjukkan bahwa
+  semakin besar arus (misalnya tengah hari), overpotensial semakin tinggi, sehingga efisiensi konversi justru
+  menurun. Reaksi pada dua elektroda adalah:</p>
+  <p><strong>Anoda Reaksi Evolusi Oksigen (OER):</strong></p>
+  $$2\,\mathrm{H_2O} \rightarrow \mathrm{O_2} + 4\,\mathrm{H^+} + 4\,e^-$$
+  <p>OER memiliki overpotensial paling besar karena melibatkan perpindahan empat elektron secara berurutan
+  melalui sejumlah spesies antara (OH, O, OOH), sehingga kinetikanya lambat (Nosaka, 2023).</p>
+  <p><strong>Katoda Reduksi CO₂ (CO₂RR):</strong></p>
+  $$\mathrm{CO_2} + 6\,\mathrm{H^+} + 6\,e^- \rightarrow \mathrm{CH_3OH} + \mathrm{H_2O}$$
+  <p>Fungsionalisasi permukaan elektroda dengan katalis nanopartikel menaikkan j₀ (terutama pada katoda),
+  menurunkan energi aktivasi, dan menekan overpotensial (Martí dkk., 2023). Pada model, j₀,OER = 10⁻⁶ A per cm²
+  dan j₀,CO₂RR = 5×10⁻⁴ A per cm². Tegangan sel total dihitung sebagai penjumlahan komponen termodinamika,
+  kinetik, dan ohmik:</p>
+  $$V_\text{sel}(I,T) = E_\text{rev}(T) + \eta_\text{OER}(j) + \eta_\text{CO_2RR}(j) + j \cdot R_\text{ASR}$$
+  <p>dengan R_ASR = 0,5 Ω·cm² adalah resistansi spesifik internal (membran dan elektrolit). Titik operasi (arus
+  I) diperoleh secara iteratif dari kesetimbangan daya P_reaktor = V_stack · I. Rapat arus tukar j₀ menggambarkan
+  keraelan reaksi berlangsung tanpa dorongan eksternal: reaksi dengan j₀ besar (terkatalisis baik) hanya menuntut
+  overpotensial kecil, sedangkan reaksi dengan j₀ sangat kecil seperti OER menuntut overpotensial besar; inilah
+  sebabnya j₀,OER (10⁻⁶ A per cm²) jauh lebih kecil daripada j₀,CO₂RR (5×10⁻⁴ A per cm²). Koefisien transfer α
+  (sekitar 0,5) mencerminkan kesimetrian sawar energi reaksi. Karena overpotensial tumbuh terhadap logaritma
+  arus, menggandakan laju reaksi hanya menuntut tambahan tegangan yang kira-kira tetap; konsekuensi pentingnya,
+  periode beriradiasi tinggi (arus besar, misalnya tengah hari) justru memiliki efisiensi konversi yang lebih
+  rendah. Dengan demikian, tegangan sel V_sel bukanlah konstanta melainkan besaran dinamis yang berubah setiap
+  saat mengikuti arus dan temperatur, inilah salah satu keunggulan utama model ini dibanding pendekatan tegangan
+  tetap.</p>
 
-  <h4>A.5 Efisiensi dan Loss Energi</h4>
-  <p>Efisiensi total sistem PV-EC didefinisikan sebagai perkalian efisiensi panel surya dan efisiensi
-  elektrokimia, sebagaimana Persamaan (1.6).</p>
-  $$\eta_\text{total} = \eta_\text{PV} \times \eta_\text{EC} \qquad\qquad (1.6)$$
-  <ul>
-    <li><strong>Kehilangan Energi pada Panel Surya (η_PV).</strong> Panel surya hanya menyerap foton yang
-    memenuhi syarat energi celah pita (\(E_\text{foton} \ge E_\text{gap}\)). Foton berenergi rendah tidak
-    terserap (transmisi), sedangkan energi berlebih dari foton berenergi tinggi terbuang menjadi panas
-    (thermalization loss). Ditambah kerugian rekombinasi, efisiensi sel silikon tunggal dibatasi oleh Batas
-    Shockley-Queisser di angka sekitar 33%. Modul MPPT krusial untuk meminimalkan mismatch loss.</li>
-    <li><strong>Kehilangan Energi pada Elektrokimia (η_EC).</strong> Kerugian terbesar berasal dari
-    overpotential (tegangan di atas batas teoritis 1,23 V) yang terbuang sebagai panas akibat rintangan
-    kinetik. Terdapat pula disipasi energi akibat hambatan ohmik, sesuai Persamaan (1.7).</li>
-  </ul>
-  $$P_\text{loss} = I^2 \times R \qquad\qquad (1.7)$$
-  <p><strong>Nilai Tambah.</strong> Meskipun efisiensi sun-to-fuel lebih rendah dari sun-to-electricity
-  konvensional, sistem ini mampu menyimpan densitas energi sangat tinggi dalam bentuk ikatan kimiawi (solar
-  fuels) jangka panjang.</p>
+  <h3 id="s27">2.7 Hukum Faraday, Efisiensi Faraday, dan Selektivitas Katoda</h3>
+  <p><strong>Hukum Faraday</strong> menghubungkan muatan listrik dengan jumlah mol produk:</p>
+  $$\dot{n}_\text{produk} = \frac{FE \cdot I}{z \cdot F}$$
+  <p>dengan z jumlah elektron per molekul (z = 4 untuk O₂, z = 6 untuk CO₂/metanol, z = 2 untuk H₂) dan FE
+  <strong>efisiensi Faraday</strong> (<em>Faradaic Efficiency</em>), yaitu fraksi arus yang benar-benar
+  menghasilkan produk yang dikehendaki. FE tidak konstan: pada rapat arus mendekati arus batas difusi (j_lim),
+  konsentrasi CO₂ di permukaan elektroda menipis (limitasi transpor massa) sehingga FE menurun:</p>
+  $$FE(j) = FE_\text{maks} \cdot \sqrt{1 - \frac{j}{j_\text{lim}}}\,,\qquad FE_\text{maks} = 0{,}95$$
+  <p>Perbedaan jumlah elektron antarproduk menjelaskan mengapa, untuk arus yang sama, produk terbentuk pada laju
+  yang berbeda: satu molekul O₂ menuntut 4 elektron, metanol 6 elektron, dan H₂ hanya 2 elektron. Dengan kata
+  lain, muatan yang diperlukan untuk membentuk satu molekul metanol setara dengan tiga molekul H₂.</p>
+  <p><strong>Selektivitas dan Reaksi Evolusi Hidrogen (HER).</strong> Pada katoda, CO₂RR berkompetisi dengan
+  <strong>HER</strong> (<em>Hydrogen Evolution Reaction</em>, 2H⁺ + 2e⁻ → H₂). Akibatnya, hanya sebagian arus
+  faradaik yang terkonversi menjadi metanol. Model menetapkan faktor selektivitas φ = 0,60 (60% arus menjadi
+  CH₃OH; 40% menjadi H₂). Selektivitas yang terbatas ini merupakan tantangan nyata dalam <em>artificial
+  photosynthesis</em> dan meningkatkannya menuntut katalis yang lebih spesifik terhadap CO₂RR. Hidrogen yang
+  terbentuk bukanlah limbah, melainkan bahan bakar bersih (<em>solar fuel</em>) yang turut bernilai. Karena O₂
+  pada anoda mengikuti total arus faradaik, laju produksi O₂ tidak terpengaruh oleh pergeseran selektivitas
+  katoda. Lebih lanjut, ketika pasokan CO₂ dari unit DAC tidak mencukupi, arus yang semula menuju CO₂RR
+  dialihkan ke HER sehingga kekekalan muatan tetap terjaga dan produksi O₂ tetap konstan (Nosaka, 2023; Martí
+  dkk., 2023).</p>
+
+  <h3 id="s28">2.8 Penangkapan Karbon Langsung (DAC) dan Energi Regenerasi</h3>
+  <p>DAC (<em>Direct Air Capture</em>) memisahkan CO₂ langsung dari udara. Skema <em>Liquid DAC</em> (L-DAC)
+  yang dimodelkan menggunakan larutan basa KOH dalam dua siklus:</p>
+  <p><strong>1. Absorpsi pada kontaktor udara:</strong></p>
+  $$\mathrm{CO_2} + 2\,\mathrm{KOH} \rightarrow \mathrm{K_2CO_3} + \mathrm{H_2O}$$
+  <p>Laju absorpsi dimodelkan secara transpor massa: r_DAC = k · A_kontaktor · C_CO₂, dengan C_CO₂ konsentrasi
+  molar CO₂ udara (sekitar 420 ppm).</p>
+  <p><strong>2. Regenerasi (kalsinasi)</strong> pada sekitar 900 °C untuk melepaskan CO₂ murni. Tahap ini
+  menuntut kalor besar; pada model, kebutuhan energi panas regenerasi ditetapkan q_regen sekitar 1,46 kWh per kg
+  CO₂ (sekitar 5,25 GJ per ton). Energi ini dipasok dari kolektor surya termal terpisah, sehingga efisiensi
+  sistem net dihitung dengan memasukkan beban tersebut:</p>
+  $$\eta_\text{net} = \frac{E_\text{kimia}}{E_\text{surya} + E_\text{regen} / \eta_\text{termal}}$$
+  <p>L-DAC juga mengonsumsi air dalam jumlah signifikan akibat evaporasi pada kontaktor, yakni sekitar 4,7 kg
+  H₂O per kg CO₂ tertangkap. Kedua siklus tersebut berjalan berkesinambungan: larutan KOH yang telah jenuh oleh
+  karbonat diregenerasi melalui kalsinasi agar dapat dipakai ulang, sementara CO₂ murni hasil pelepasan
+  dialirkan ke katoda reaktor sebagai umpan reaksi CO₂RR. Beban kalor kalsinasi merupakan komponen energi
+  terbesar pada DAC; bila diabaikan, efisiensi sistem akan tampak lebih tinggi daripada kenyataannya. Karena
+  itulah model membedakan η_total (tanpa beban DAC) dari η_net (dengan beban DAC). Konsumsi air yang tinggi,
+  yang terutama berasal dari evaporasi pada kontaktor udara terbuka, menjadi kendala fisik utama penerapan L-DAC
+  di wilayah panas dan kering, dan menjadi argumen kuat bagi penempatan fasilitas di kawasan pesisir yang dapat
+  diintegrasikan dengan unit desalinasi bertenaga surya (Keith dkk., 2018; Prats-Salvado dkk., 2024).</p>
+
+  <h3 id="s29">2.9 Metrik Tekno-ekonomi: LCOP versus LCOD</h3>
+  <p>Dua metrik biaya digunakan untuk mengevaluasi kelayakan ekonomi DAC, dan keduanya kerap tertukar.</p>
+  <p><strong>LCOP</strong> (<em>Levelized Cost of Produced CO₂</em>) adalah biaya rata-rata per ton CO₂ yang
+  dihasilkan/ditangkap oleh sistem, tanpa memperhitungkan emisi tak langsung yang muncul selama proses. Metrik
+  ini cenderung menampilkan biaya yang lebih rendah karena hanya melihat keluaran kotor.</p>
+  <p><strong>LCOD</strong> (<em>Levelized Cost of Removed CO₂</em>) adalah biaya rata-rata per ton CO₂ yang
+  benar-benar dihilangkan dari atmosfer secara neto, dengan memperhitungkan emisi tak langsung selama proses.
+  Metrik ini lebih representatif terhadap dampak iklim sebenarnya.</p>
+  <p>Sebagai ilustrasi, sebuah fasilitas DAC bertenaga gas alam yang menangkap 100 kg CO₂ namun melepaskan 30 kg
+  CO₂ baru dari pembakaran akan dinilai murah menurut LCOP (basis 100 kg) tetapi jauh lebih mahal menurut LCOD
+  (basis 70 kg neto). Sebaliknya, fasilitas bertenaga surya nyaris tidak menambah emisi proses sehingga LCOP
+  mendekati LCOD. Dengan demikian, LCOD merupakan tolok ukur yang lebih adil untuk membandingkan kelayakan
+  teknologi penangkapan karbon, dan sistem PV-EC bertenaga surya menunjukkan keunggulan justru ketika dinilai
+  dengan metrik ini (Prats-Salvado dkk., 2024).</p>
+
+  <h3 id="s210">2.10 Nomenklatur dan Parameter Model</h3>
+  <table>
+    <caption>Tabel 2.2. Nomenklatur dan parameter model.</caption>
+    <thead><tr><th>Simbol/Singkatan</th><th>Definisi</th><th>Nilai</th><th>Satuan</th><th>Sumber</th></tr></thead>
+    <tbody>
+      <tr><td>η_PV,ref</td><td>Efisiensi PV referensi @25 °C</td><td>20</td><td>%</td><td>Rudiyanto 2023</td></tr>
+      <tr><td>Batas SQ</td><td>Batas Shockley-Queisser</td><td>sekitar 33</td><td>%</td><td>Rudiyanto 2023</td></tr>
+      <tr><td>β</td><td>Koefisien temperatur silikon</td><td>0,4</td><td>% per °C</td><td>Wibowo 2023</td></tr>
+      <tr><td>NOCT</td><td>Nominal Operating Cell Temperature</td><td>45</td><td>°C</td><td>Wibowo 2023</td></tr>
+      <tr><td>G_STC</td><td>Iradiasi puncak (STC)</td><td>1000</td><td>W per m²</td><td>Rudiyanto 2023</td></tr>
+      <tr><td>A_panel</td><td>Luas panel</td><td>10</td><td>m²</td><td>konfigurasi</td></tr>
+      <tr><td>V_bus</td><td>Tegangan bus DC</td><td>48</td><td>V</td><td>Rauf 2023</td></tr>
+      <tr><td>R_kabel</td><td>Resistansi kabel</td><td>0,05</td><td>Ω</td><td></td></tr>
+      <tr><td>E°_rev</td><td>Potensial reversibel pemecahan air</td><td>1,23</td><td>V</td><td>Whang 2018</td></tr>
+      <tr><td>α</td><td>Koefisien transfer muatan</td><td>0,5</td><td></td><td>Nosaka 2023</td></tr>
+      <tr><td>j₀,OER</td><td>Rapat arus tukar OER</td><td>10⁻⁶</td><td>A per cm²</td><td>Nosaka 2023</td></tr>
+      <tr><td>j₀,CO₂RR</td><td>Rapat arus tukar CO₂RR</td><td>5×10⁻⁴</td><td>A per cm²</td><td>Martí 2023</td></tr>
+      <tr><td>R_ASR</td><td>Resistansi spesifik internal</td><td>0,5</td><td>Ω·cm²</td><td></td></tr>
+      <tr><td>N_sel</td><td>Jumlah sel seri (stack)</td><td>5</td><td></td><td>konfigurasi</td></tr>
+      <tr><td>A_elektroda</td><td>Luas elektroda efektif</td><td>2000</td><td>cm²</td><td>konfigurasi</td></tr>
+      <tr><td>FE_maks</td><td>Efisiensi Faraday maksimum</td><td>95</td><td>%</td><td>Martí 2023</td></tr>
+      <tr><td>j_lim</td><td>Rapat arus batas transpor massa</td><td>0,50</td><td>A per cm²</td><td></td></tr>
+      <tr><td>φ</td><td>Selektivitas katoda (CO₂RR)</td><td>60</td><td>%</td><td>Martí 2023</td></tr>
+      <tr><td>z_O₂ / z_CO₂ / z_H₂</td><td>Elektron per molekul</td><td>4 / 6 / 2</td><td></td><td>Nosaka 2023</td></tr>
+      <tr><td>q_regen</td><td>Energi panas regenerasi DAC</td><td>1,46</td><td>kWh per kg</td><td>Keith 2018</td></tr>
+      <tr><td>H₂O_DAC</td><td>Konsumsi air DAC</td><td>4,7</td><td>kg per kg</td><td>Prats 2024</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ============================================================= -->
+  <!-- BAB III HASIL DAN PEMBAHASAN                                   -->
+  <!-- ============================================================= -->
+  <h2 id="bab3">BAB III. HASIL DAN PEMBAHASAN</h2>
+  <h3 id="s31">3.1 Hasil Kajian</h3>
+
+  <h4 id="s311">3.1.1 Hasil Skenario Harian</h4>
+  <table>
+    <caption>Tabel 3.1. Keluaran simulasi harian (panel 10 m²).</caption>
+    <thead><tr><th>Besaran</th><th>Nilai</th><th>Interpretasi fisis</th></tr></thead>
+    <tbody>
+      <tr><td>Energi surya datang</td><td>76,4 kWh</td><td>Total iradiasi yang diterima 10 m² selama satu hari</td></tr>
+      <tr><td>Energi listrik PV</td><td>13,3 kWh (17,4%)</td><td>η_PV turun dari 20% akibat efek termal panel</td></tr>
+      <tr><td>Energi tiba di reaktor</td><td>12,9 kWh (16,9%)</td><td>Setelah dikurangi rugi ohmik kabel</td></tr>
+      <tr><td>Energi kimia</td><td>6,7 kWh (8,8%)</td><td>Energi tersimpan dalam ikatan kimia produk</td></tr>
+      <tr><td>E_rev (Nernst)</td><td>1,219 V</td><td>Potensial reversibel pada sekitar 35 °C</td></tr>
+      <tr><td>η_OER</td><td>0,571 V</td><td>Overpotensial anoda terbesar (transfer 4 elektron)</td></tr>
+      <tr><td>η_CO₂RR</td><td>0,239 V</td><td>Overpotensial katoda lebih kecil (katalis nanopartikel)</td></tr>
+      <tr><td>V_sel</td><td>2,054 V</td><td>E_rev + η_OER + η_CO₂RR + V_ohm</td></tr>
+      <tr><td>η_PV rata-rata</td><td>17,4%</td><td>Di bawah batas SQ 33% dan η_ref 20%</td></tr>
+      <tr><td>η_EC rata-rata</td><td>51,8%</td><td>= (E_rev / V_sel) · FE</td></tr>
+      <tr><td>η_total</td><td>8,8%</td><td>Efisiensi sun-to-fuel (tanpa beban DAC)</td></tr>
+      <tr><td>η_net</td><td>8,5%</td><td>Termasuk energi regenerasi DAC</td></tr>
+      <tr><td>FE rata-rata</td><td>89,9%</td><td>Di bawah FE_maks 95% akibat transpor massa</td></tr>
+      <tr><td>O₂ dihasilkan</td><td>1.641 g (51 mol; 1.148 L)</td><td>Setara serapan sekitar 6 pohon dewasa</td></tr>
+      <tr><td>CO₂ ditangkap (menjadi CH₃OH)</td><td>902 g (20 mol)</td><td>Terkonversi menjadi metanol (selektivitas 60%)</td></tr>
+      <tr><td>H₂ produk samping</td><td>82 g (41 mol)</td><td>Dari HER, juga solar fuel</td></tr>
+      <tr><td>Kebutuhan air</td><td>6,1 L</td><td>OER 1,8 L + DAC 4,2 L</td></tr>
+    </tbody>
+  </table>
+  <p>Distribusi rugi energi menunjukkan bahwa kehilangan terbesar terjadi pada tahap konversi fotovoltaik
+  (82,6%), sesuai konsekuensi Batas Shockley-Queisser yang diperparah efek termal tropis. Pada reaktor,
+  overpotensial anoda (OER) mendominasi karena karakteristik perpindahan empat elektronnya, sehingga tegangan
+  operasi 2,054 V jauh melampaui 1,23 V teoretis; selisih ini langsung menurunkan efisiensi elektrokimia menjadi
+  51,8%. Efisiensi <em>sun-to-fuel</em> total 8,8% berada dalam rentang yang dilaporkan literatur (5 sampai 15%)
+  dan menegaskan bahwa konversi surya menjadi bahan bakar memang lebih rendah dibandingkan konversi menjadi
+  listrik; kompensasinya adalah kemampuan penyimpanan energi jangka panjang dalam bentuk ikatan kimia. Penerapan
+  selektivitas katoda menghasilkan dua produk bernilai, yakni metanol dan hidrogen, sehingga sistem berfungsi
+  ganda sebagai penangkap karbon sekaligus penghasil bahan bakar.</p>
+
+  <h4 id="s312">3.1.2 Hasil Skenario Tahunan</h4>
+  <table>
+    <caption>Tabel 3.2. Keluaran simulasi tahunan (iklim tropis).</caption>
+    <thead><tr><th>Besaran</th><th>Nilai</th><th>Interpretasi fisis</th></tr></thead>
+    <tbody>
+      <tr><td>Faktor kecerahan rata-rata</td><td>0,70</td><td>Rata-rata kondisi langit setahun</td></tr>
+      <tr><td>Iradiasi rata-rata</td><td>5,34 kWh per m² per hari</td><td>Konsisten dengan data Indonesia (4,5 sampai 5,5)</td></tr>
+      <tr><td>η_total tahunan</td><td>9,5%</td><td>Sedikit berbeda dari harian akibat variasi termal musiman</td></tr>
+      <tr><td>η_net tahunan</td><td>9,1%</td><td>Termasuk beban regenerasi DAC</td></tr>
+      <tr><td>O₂ per tahun</td><td>453 kg</td><td>Setara serapan sekitar 5 pohon dewasa</td></tr>
+      <tr><td>CO₂ tertangkap per tahun</td><td>249 kg</td><td>Terkonversi menjadi metanol</td></tr>
+      <tr><td>H₂ per tahun</td><td>22,6 kg</td><td>Produk samping HER</td></tr>
+      <tr><td>Kebutuhan air per tahun</td><td>1.680 L</td><td>OER 510 L + DAC 1.171 L</td></tr>
+      <tr><td>Selisih musiman (kemarau vs hujan)</td><td>+25%</td><td>Kemarau lebih produktif</td></tr>
+    </tbody>
+  </table>
+  <p>Produktivitas mengikuti pola musiman berbentuk lonceng dengan puncak pada Agustus dan titik terendah pada
+  Februari, sejalan dengan profil kecerahan. Selisih +25% antara kemarau dan hujan menegaskan ketergantungan
+  sistem terhadap kondisi cuaca, yang menjadi pertimbangan penting bagi implementasi nyata. Efisiensi tahunan
+  (9,5%) sedikit lebih tinggi dari harian karena rugi ohmik yang bersifat kuadratik terhadap arus berkurang pada
+  hari-hari beriradiasi rendah.</p>
+
+  <h4 id="s313">3.1.3 Diagram Alir Program Tahunan</h4>
+  <p>Skenario tahunan dibangun dengan menjalankan mesin fisika harian sebanyak 365 kali. Setelah inisiasi
+  parameter, program membangun pola musim untuk 365 hari, lalu untuk setiap hari ke-d (selama d kurang dari 365)
+  menjalankan mesin harian dengan masukan kecerahan musiman s dan temperatur T, menyimpan keluaran harian, dan
+  menaikkan indeks hari. Setelah seluruh hari selesai, hasil diagregasi per bulan dan per tahun, kemudian
+  ringkasan dan grafik ditampilkan.</p>
+
+  <h4 id="s314">3.1.4 Visualisasi Hasil</h4>
+  <p>Simulasi menghasilkan dua kelompok berkas grafik, yaitu tujuh grafik skenario harian dari
+  <code>Simulasi.py</code> dan tiga grafik skenario tahunan dari <code>Simulasi_Tahunan.py</code>.</p>
+  <table>
+    <caption>Tabel 3.3. Keluaran Simulasi.py (7 grafik, skenario harian).</caption>
+    <thead><tr><th>Berkas</th><th>Konten</th></tr></thead>
+    <tbody>
+      <tr><td>1_profil_daya.png</td><td>Profil daya dan temperatur sel sepanjang hari</td></tr>
+      <tr><td>2_tegangan_sel.png</td><td>Dekomposisi tegangan sel (E_rev, η_OER, η_CO₂RR, V_ohm)</td></tr>
+      <tr><td>3_sankey_energi.png</td><td>Diagram Sankey aliran dan kehilangan energi</td></tr>
+      <tr><td>4_efisiensi.png</td><td>Diagram batang efisiensi (η_PV, η_EC, η_total, FE)</td></tr>
+      <tr><td>5_produksi.png</td><td>Akumulasi produksi O₂ dan CO₂ harian</td></tr>
+      <tr><td>6_faraday_dac.png</td><td>Efisiensi Faraday dinamis dan neraca suplai DAC</td></tr>
+      <tr><td>7_neraca_lengkap.png</td><td>Neraca produk, beban energi DAC, dan neraca air</td></tr>
+    </tbody>
+  </table>
+  <table>
+    <caption>Tabel 3.4. Keluaran Simulasi_Tahunan.py (3 grafik, skenario tahunan).</caption>
+    <thead><tr><th>Berkas</th><th>Konten</th></tr></thead>
+    <tbody>
+      <tr><td>tahunan_1_resource.png</td><td>Sumber daya surya sepanjang tahun (musim kemarau/hujan)</td></tr>
+      <tr><td>tahunan_2_bulanan.png</td><td>Produksi bulanan O₂ dan CO₂ (puncak Agustus)</td></tr>
+      <tr><td>tahunan_3_kumulatif.png</td><td>Akumulasi produksi tahunan</td></tr>
+    </tbody>
+  </table>
+  <p>Enam grafik utama bergaya poster yang dihasilkan simulasi disajikan berikut ini, mencakup skenario harian
+  (Gambar 1 sampai 4) dan skenario tahunan (Gambar 5 dan 6).</p>
 
   <figure>
     <img src="images/poster_1_aliran_energi.png" alt="Diagram Sankey aliran dan kehilangan energi">
-    <figcaption><b>Gambar 2.</b> Aliran dan kehilangan energi sistem PV-EC dari simulasi. Rugi terbesar
-    terjadi pada konversi panel surya (konsekuensi Batas Shockley-Queisser yang diperparah efek termal),
-    diikuti rugi ohmik dan rugi elektrokimia, sehingga energi kimia berguna hanya sebagian kecil dari energi
-    surya datang.</figcaption>
+    <figcaption><b>Gambar 1.</b> Diagram Sankey aliran dan kehilangan energi sistem PV-EC. Rugi terbesar terjadi
+    pada konversi panel surya (konsekuensi Batas Shockley-Queisser yang diperparah efek termal), diikuti rugi
+    ohmik dan rugi elektrokimia, sehingga energi kimia berguna hanya 8,8% dari energi surya datang.</figcaption>
   </figure>
   <figure>
     <img src="images/poster_2_efisiensi.png" alt="Diagram batang efisiensi konversi">
-    <figcaption><b>Gambar 3.</b> Efisiensi konversi (η_PV, η_EC, η_total, dan efisiensi Faraday) terhadap
-    garis acuan Batas Shockley-Queisser 33%. Efisiensi total merupakan hasil perkalian η_PV dan η_EC sesuai
-    Persamaan (1.6).</figcaption>
-  </figure>
-
-  <!-- ===== B. EKONOMI & LINGKUNGAN ===== -->
-  <h3 id="aspekB">B. Aspek Ekonomi dan Lingkungan</h3>
-
-  <h4>B.1 Aspek Ekonomi (LCOP versus LCOD)</h4>
-  <p>Sistem berbasis tenaga surya umumnya memiliki biaya investasi awal (CAPEX) yang tinggi akibat kebutuhan
-  panel surya dan kapasitas penyimpanan energi (baterai) dalam jumlah besar.</p>
-  <ul>
-    <li><strong>LCOP (Levelized Cost of Produced CO₂)</strong> menghitung biaya rata-rata untuk setiap CO₂
-    yang berhasil ditangkap, tanpa memperhatikan emisi tambahan selama proses; metrik ini hanya berfokus pada
-    keluaran CO₂ dari sistem.</li>
-    <li><strong>LCOD (Levelized Cost of Removed CO₂)</strong> merupakan metrik yang lebih lengkap, menghitung
-    biaya berdasarkan jumlah CO₂ yang benar-benar berhasil dihilangkan dari atmosfer secara neto, dengan
-    memperhitungkan emisi tidak langsung yang muncul selama proses.</li>
-  </ul>
-  <p><strong>Perbandingan.</strong> Sistem DAC konvensional (gas alam) terlihat murah pada LCOP, namun LCOD
-  meningkat tajam karena emisi proses yang besar. Sebaliknya, pada sistem DAC surya kenaikan biaya dari LCOP
-  ke LCOD relatif kecil karena emisi tambahan jauh lebih rendah. Oleh karena itu, LCOD dianggap metrik yang
-  lebih akurat dan adil untuk mengevaluasi kinerja ekonomi sekaligus dampak lingkungan (Prats-Salvado dkk.,
-  2024).</p>
-
-  <h4>B.2 Fakta Lingkungan</h4>
-  <ul>
-    <li>Sistem L-DAC konvensional mengandalkan pembakaran gas alam untuk kalsinasi bersuhu tinggi sehingga
-    menghasilkan emisi fosil baru.</li>
-    <li>Integrasi teknologi panas matahari terkonsentrasi (concentrated solar thermal) mampu mengeliminasi
-    emisi operasional secara signifikan.</li>
-    <li>Dengan energi bersih, jejak karbon terutama hanya berasal dari tahap konstruksi, sehingga pencapaian
-    penghapusan karbon bersih (net removal) menjadi jauh lebih tinggi (Keith dkk., 2018).</li>
-  </ul>
-
-  <h4>B.3 Kelemahan Lingkungan Fisik: Konsumsi Air</h4>
-  <ul>
-    <li>Sistem L-DAC mengonsumsi sekitar 4,7 ton H₂O per 1 ton CO₂ yang ditangkap.</li>
-    <li>Laju penguapan melonjak drastis di area bersuhu tinggi dengan kelembapan rendah.</li>
-  </ul>
-  <p><strong>Solusi yang direkomendasikan:</strong></p>
-  <ul>
-    <li>Penempatan fasilitas di wilayah pesisir (kurang dari 100 km dari laut).</li>
-    <li>Integrasi dengan unit desalinasi bertenaga surya (sekitar 3,5 kWh per ton H₂O).</li>
-    <li>Tangki penyimpanan air yang disesuaikan dengan kebutuhan puncak harian.</li>
-    <li>Inovasi masa depan berupa material Metal-Organic Frameworks (MOFs) atau pendekatan biomimetik untuk
-    memanen air dari udara (Prats-Salvado dkk., 2024).</li>
-  </ul>
-
-  <!-- ===== C. SOSIAL & REGULASI ===== -->
-  <h3 id="aspekC">C. Aspek Sosial dan Regulasi</h3>
-
-  <h4>C.1 Potensi Penerimaan Masyarakat</h4>
-  <ul>
-    <li>Tren positif, meskipun tantangan pemahaman masih ada.</li>
-    <li>Terdapat persepsi kuat bahwa bahan bakar fosil harus digantikan oleh energi bersih (Protti dan
-    Serpone, 2023).</li>
-    <li>Hambatan utama berupa kurangnya kesadaran akan manfaat jangka panjang dan biaya awal yang
-    dipersepsikan tinggi.</li>
-    <li>Di daerah pedesaan, keberhasilan bergantung pada proses partisipatif dan manfaat kolektif yang
-    dirasakan langsung (Rauf dkk., 2023).</li>
-  </ul>
-
-  <h4>C.2 Penciptaan Lapangan Kerja</h4>
-  <ul>
-    <li>Sektor energi surya global telah menciptakan lebih dari 4,4 juta pekerjaan hingga 2019, dan
-    diproyeksikan terus meningkat.</li>
-    <li>Sistem PV-EC membutuhkan SDM terampil untuk instalasi, pemeliharaan modul PV, dan pengoperasian
-    reaktor kimia.</li>
-    <li>Membuka peluang industri lokal naik kelas dari perakitan menuju pabrikasi sel surya dan komponen
-    teknologi tinggi (Rauf dkk., 2023).</li>
-  </ul>
-
-  <h4>C.3 Kebijakan yang Diperlukan</h4>
-  <ul>
-    <li><strong>Feed-in Tariff (FiT):</strong> kepastian harga jual listrik untuk meningkatkan minat investasi.</li>
-    <li><strong>Insentif fiskal dan green financing</strong> untuk meningkatkan kelayakan ekonomi proyek.</li>
-    <li><strong>Carbon trading atau carbon pricing</strong> untuk memberikan nilai ekonomi pada pengurangan emisi.</li>
-    <li>Penyederhanaan perizinan dan penguatan kebijakan industri seperti TKDN.</li>
-  </ul>
-
-  <h4>C.4 Insentif yang Sudah Tersedia</h4>
-  <ul>
-    <li>Kebijakan Feed-in Tariff (FiT) atau skema harga listrik energi terbarukan.</li>
-    <li>Peraturan Presiden No. 112 Tahun 2022 tentang percepatan pengembangan energi terbarukan.</li>
-    <li>Insentif fiskal berupa keringanan pajak, pembebasan bea masuk, dan fasilitas perpajakan.</li>
-    <li>Peraturan Presiden No. 98 Tahun 2021 tentang mekanisme nilai ekonomi karbon dan perdagangan karbon.</li>
-  </ul>
-
-  <h4>C.5 Hambatan Non-teknis</h4>
-  <ul>
-    <li><strong>Finansial:</strong> CAPEX sangat tinggi; biaya pembiayaan tinggi di negara berkembang;
-    ketidakpastian biaya konstruksi untuk proses baru.</li>
-    <li><strong>Sosial:</strong> kurangnya kesadaran masyarakat; rendahnya rasa memiliki (ownership) pada
-    proyek komunitas; kurangnya SDM terampil lokal.</li>
-    <li><strong>Regulasi:</strong> birokrasi yang rumit (red tape); kurangnya konsistensi informasi antar
-    pemangku kepentingan; konflik pemanfaatan lahan; rendahnya daya beli listrik oleh utilitas.</li>
-  </ul>
-
-  <!-- ===== D. VISUALISASI ===== -->
-  <h3 id="aspekD">D. Visualisasi Hasil Simulasi</h3>
-  <p>Untuk mengukur analisis di atas secara kuantitatif, dibangun simulasi numerik time-series (resolusi satu
-  menit) yang menjalankan seluruh rantai konversi pada skenario harian dan tahunan untuk konfigurasi panel
-  10 m². Hasil utamanya disajikan pada gambar berikut.</p>
-
-  <figure>
-    <img src="images/poster_5_produk_harian.png" alt="Produksi harian O2 CO2 H2">
-    <figcaption><b>Gambar 4.</b> Akumulasi produk sepanjang hari: oksigen, CO₂ tertangkap (terkonversi
-    menjadi metanol), dan hidrogen sebagai produk samping. Produksi terkonsentrasi pada siang hari saat
-    iradiasi kuat.</figcaption>
+    <figcaption><b>Gambar 2.</b> Diagram batang efisiensi konversi (η_PV, η_EC, η_total, dan efisiensi Faraday)
+    terhadap garis acuan Batas Shockley-Queisser 33%. Efisiensi total merupakan hasil perkalian η_PV dan η_EC.</figcaption>
   </figure>
   <figure>
-    <img src="images/poster_4_produksi_tahunan.png" alt="Sumber surya dan produksi tahunan">
-    <figcaption><b>Gambar 5.</b> Sumber surya (atas: sebaran iradiasi harian dan rata-rata bergerak) dan
+    <img src="images/poster_3_tegangan_sel.png" alt="Dekomposisi tegangan sel reaktor">
+    <figcaption><b>Gambar 3.</b> Dekomposisi tegangan sel reaktor. Tegangan operasi sekitar 2,054 V tersusun
+    atas potensial reversibel 1,23 V ditambah overpotensial OER, overpotensial CO₂RR, dan rugi ohmik. Selisih di
+    atas 1,23 V terbuang sebagai panas, dengan overpotensial anoda (OER) paling dominan akibat transfer empat
+    elektron.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/poster_5_produk_harian.png" alt="Akumulasi produk harian">
+    <figcaption><b>Gambar 4.</b> Akumulasi produk sepanjang hari: oksigen, CO₂ tertangkap (terkonversi menjadi
+    metanol), dan hidrogen sebagai produk samping. Produksi terkonsentrasi pada siang hari saat iradiasi
+    kuat.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/poster_4_produksi_tahunan.png" alt="Sumber surya dan produksi bulanan tahunan">
+    <figcaption><b>Gambar 5.</b> Sumber daya surya (atas: sebaran iradiasi harian dan rata-rata bergerak) dan
     produksi bulanan (bawah) sepanjang tahun. Pita musim kemarau dan hujan selaras pada kedua panel;
-    produktivitas memuncak pada musim kemarau.</figcaption>
+    produktivitas memuncak pada pertengahan Agustus.</figcaption>
   </figure>
   <figure>
     <img src="images/poster_6_produk_tahunan.png" alt="Akumulasi produk tahunan">
     <figcaption><b>Gambar 6.</b> Akumulasi produksi O₂, CO₂, dan H₂ sepanjang tahun. Kemiringan kurva makin
     curam pada musim kemarau, menegaskan ketergantungan sistem terhadap kondisi cuaca.</figcaption>
   </figure>
+
+  <p>Seluruh grafik tersebut dirangkum dalam sebuah dashboard komprehensif yang menggabungkan dinamika harian
+  dan kinerja tahunan dalam satu tampilan terintegrasi.</p>
   <figure>
     <img src="images/Dashboard_Semua.png" alt="Dashboard komprehensif simulasi PV-EC">
-    <figcaption><b>Gambar 7.</b> Dashboard komprehensif simulasi PV-EC yang menggabungkan dinamika harian
-    dan kinerja tahunan dalam 14 panel terintegrasi, dari profil daya dan dekomposisi tegangan hingga aliran
-    energi, neraca produk, beban DAC, dan akumulasi tahunan.</figcaption>
+    <figcaption><b>Gambar 7.</b> Dashboard komprehensif simulasi PV-EC yang menggabungkan dinamika harian dan
+    kinerja tahunan dalam 14 panel terintegrasi, dari profil daya dan dekomposisi tegangan hingga aliran energi,
+    neraca produk, beban DAC, dan akumulasi tahunan.</figcaption>
   </figure>
 
-  <!-- ===== V. KESIMPULAN ===== -->
-  <h2 id="bab5">V. Kesimpulan dan Rekomendasi</h2>
-  <h3>1. Urgensi dan Nilai Strategis</h3>
-  <ul>
-    <li>Sistem PV-EC berperan krusial dalam pemanfaatan energi surya secara komprehensif.</li>
-    <li>Alur konversi mengikuti skema Energi Surya → Listrik DC → Energi Kimia.</li>
-    <li>PLTS bertindak sebagai penggerak utama reaksi redoks pada artificial photosynthesis.</li>
-    <li>Emisi operasional dari kalsinasi bersuhu tinggi dapat dieliminasi dengan panas matahari
-    terkonsentrasi.</li>
-    <li>Seluruh sirkulasi konversi CO₂ menjadi O₂ digerakkan energi terbarukan bersih, lebih unggul secara
-    ekonomi dan lingkungan saat dievaluasi menggunakan metrik LCOD.</li>
-  </ul>
-  <h3>2. Analisis Efisiensi dan Kapabilitas</h3>
-  <ul>
-    <li>Panel surya silikon tunggal dibatasi Batas Shockley-Queisser (sekitar 33%) akibat kerugian transmisi
-    dan rekombinasi.</li>
-    <li>Efisiensi total dinyatakan oleh \(\eta_\text{total} = \eta_\text{PV} \times \eta_\text{EC}\).</li>
-    <li>Efisiensi sun-to-fuel lebih rendah dari panel konvensional, namun menawarkan penyimpanan densitas
-    energi sangat tinggi dalam ikatan kimiawi jangka panjang.</li>
-  </ul>
-  <h3>3. Kendala Utama</h3>
-  <ul>
-    <li><strong>Termodinamika dan Kinetika:</strong> reaksi endotermik non-spontan (ΔG &gt; 0); tegangan
-    teoritis 1,23 V ditambah overpotential besar akibat transfer 4 elektron di anoda.</li>
-    <li><strong>Kelemahan Fisik:</strong> L-DAC mengonsumsi 4,7 ton H₂O per 1 ton CO₂; laju penguapan melonjak
-    di area panas dan kering.</li>
-    <li><strong>Hambatan Ekonomi:</strong> CAPEX sangat tinggi untuk perangkat keras dan infrastruktur.</li>
-  </ul>
-  <h3>4. Solusi dan Rekomendasi</h3>
-  <ul>
-    <li><strong>Fungsionalisasi Material Katalis:</strong> katalis nanopartikel pada elektroda untuk memangkas
-    energi aktivasi, mempercepat transfer elektron, dan meminimalkan rugi panas.</li>
-    <li><strong>Optimalisasi Sirkuit Daya:</strong> integrasi modul MPPT pada Solar Charge Controller (SCC)
-    untuk menekan mismatch loss saat panel menyuplai arus fluktuatif (sekitar 6 jam per hari).</li>
-    <li><strong>Strategi Pengelolaan Cairan:</strong> penempatan di area pesisir (kurang dari 100 km dari laut)
-    dan desalinasi bertenaga surya; ke depan, adopsi MOFs atau pendekatan biomimetik untuk pemanenan air dari
-    udara.</li>
-  </ul>
+  <h3 id="s32">3.2 Pembahasan</h3>
 
-  <!-- ===== VI. REFERENSI ===== -->
-  <h2 id="bab6">VI. Daftar Referensi</h2>
+  <h4 id="s321">3.2.1 Arsitektur Model</h4>
+  <p>Model disusun sebagai rantai konversi energi enam tahap yang dievaluasi pada setiap langkah waktu
+  (Δt = 1 menit). Setiap tahap mengonversi sebagian energi menjadi bentuk berikutnya dan mendisipasikan sisanya
+  sebagai rugi. Persamaan tata kelola dirangkum pada Tabel 3.5.</p>
+  <table>
+    <caption>Tabel 3.5. Persamaan tata kelola dan implementasinya.</caption>
+    <thead><tr><th>Persamaan</th><th>Bentuk</th><th>Implementasi dinamis</th></tr></thead>
+    <tbody>
+      <tr><td>1.1</td><td>P = V·I</td><td>Daya panel dengan η_PV(T) bergantung temperatur</td></tr>
+      <tr><td>1.2</td><td>ΔG = -n·F·E (Nernst)</td><td>E_rev(T) = 1,229 - 0,000846·(T - 298,15)</td></tr>
+      <tr><td>1.3</td><td>2H₂O → O₂ + 4H⁺ + 4e⁻</td><td>Kinetika Tafel η_OER(j)</td></tr>
+      <tr><td>1.4</td><td>CO₂ + 6H⁺ + 6e⁻ → CH₃OH</td><td>Kinetika Tafel + limitasi transpor massa</td></tr>
+      <tr><td>1.5</td><td>CO₂ + 2KOH → K₂CO₃</td><td>Neraca massa DAC + energi regenerasi</td></tr>
+      <tr><td>1.6</td><td>η_total = η_PV · η_EC</td><td>Efisiensi total per langkah waktu</td></tr>
+      <tr><td>1.7</td><td>P_loss = I²·R</td><td>Rugi ohmik kabel dan internal reaktor</td></tr>
+    </tbody>
+  </table>
+
+  <h4 id="s322">3.2.2 Diagram Alir Energi (Energy Cascade)</h4>
+  <p>Aliran energi sistem mengikuti rantai berurutan: masukan data radiasi dan parameter, model panel surya
+  dengan MPPT, penyaluran DC, reaktor elektrokimia, lalu pada cabang produk dilanjutkan dengan selektivitas
+  produk, neraca massa dan energi, serta DAC dan neraca air, sebelum keluaran produk akhir dihitung. Pada setiap
+  simpul sebagian energi terkonversi menjadi bentuk berikutnya dan sebagian terdisipasi sebagai rugi, sehingga
+  efisiensi keseluruhan merupakan hasil perkalian efisiensi tiap tahap.</p>
+
+  <h4 id="s323">3.2.3 Pemodelan Variasi Musim (Skenario Tahunan)</h4>
+  <p>Pada lintang ekuatorial, durasi penyinaran nyaris konstan (sekitar 12 jam) sepanjang tahun; variabilitas
+  utama berasal dari tutupan awan. Oleh karena itu, intensitas surya harian dimodelkan melalui <em>faktor
+  kecerahan</em> s(d):</p>
+  $$s(d) = s_\text{musim}(d) \cdot \delta_\text{cuaca}(d)$$
+  $$s_\text{musim}(d) = 0{,}70 + 0{,}16 \cdot \cos\!\left[\frac{2\pi (d - 227)}{365}\right]$$
+  <p>dengan puncak kecerahan pada d sekitar 227 (pertengahan Agustus, musim kemarau) dan minimum pada musim
+  hujan. Derau cuaca harian dibangkitkan acak dengan sebaran yang lebih lebar pada musim hujan (lebih sering
+  berawan), menggunakan benih acak tetap agar hasil dapat direproduksi. Temperatur lingkungan musiman turut
+  divariasikan (kemarau sekitar 30 °C, hujan sekitar 27 °C). Mesin fisika harian kemudian dijalankan 365 kali,
+  lalu hasilnya diakumulasi per bulan dan per tahun.</p>
+
+  <!-- ============================================================= -->
+  <!-- BAB IV PENUTUP                                                 -->
+  <!-- ============================================================= -->
+  <h2 id="bab4">BAB IV. PENUTUP</h2>
+  <h3 id="s41">4.1 Kesimpulan</h3>
+
+  <h4 id="s411">4.1.1 Keunggulan Sistem</h4>
   <ol>
-    <li>Prats-Salvado, E., Jagtap, N., Monnerie, N., dan Sattler, C. (2024). Solar-Powered Direct Air Capture: Techno-Economic and Environmental Assessment. Environmental Science and Technology, 58(5), 2282 sampai 2292.</li>
-    <li>Nosaka, Y. (2023). Molecular Mechanisms of Oxygen Evolution Reactions for Artificial Photosynthesis. Oxygen, 3(1), 146 sampai 163.</li>
-    <li>Martí, G., Mallón, L., Romero, N., Francàs, L., Bofill, R., Philippot, K., García-Antón, J., dan Sala, X. (2023). Surface-Functionalized Nanoparticles as Catalysts for Artificial Photosynthesis. Advanced Energy Materials, 13(21), 2300282.</li>
-    <li>Whang, D. R., dan Apaydin, D. H. (2018). Artificial Photosynthesis: Learning from Nature. ChemPhotoChem, 2(2), 148 sampai 160.</li>
-    <li>Wang, Q., dan Pornrungroj, C. (2025). Artificial photosynthetic processes using carbon dioxide, water and sunlight: can they power a sustainable future? Chemical Science, 16(1), 18990 sampai 19011.</li>
-    <li>Le, A. H., dan Guillomaitre, N. (2022). Artificial Photosynthesis: A Review of the Technology, Application, Opportunities, and Challenges. Journal of Student Research, 11(1).</li>
-    <li>Protti, S., dan Serpone, N. (2023). Multidisciplinary approaches to solar-driven water splitting and carbon dioxide conversion. Dalam S. Ghosh dan Q. Wang (Eds.), Recent Developments in Functional Materials for Artificial Photosynthesis (hlm. 1 sampai 32). Royal Society of Chemistry.</li>
-    <li>Rudiyanto, B., Rachmanita, R. E., dan Budiprasojo, A. (2023). Dasar-dasar Pemasangan Panel Surya. Unisma Press.</li>
-    <li>Wibowo, A. (2023). Instalasi Panel Listrik Surya. Yayasan Prima Agus Teknik.</li>
-    <li>Rauf, R., Ritnawati, Rachim, F., Dahri, A. T., Andre, H., Napitupulu, R. A. M., Erdawaty, Aminur, Corio, D., dan Siagian, P. (2023). Matahari sebagai Energi Masa Depan: Panduan Lengkap Pembangkit Listrik Tenaga Surya (PLTS). Yayasan Kita Menulis.</li>
+    <li>Bebas emisi operasional, karena seluruh energi penggerak bersumber dari surya.</li>
+    <li>Fungsi ganda sampai tiga, yaitu menangkap CO₂, menghasilkan O₂, sekaligus memproduksi dua bahan bakar
+    terbarukan (metanol dan hidrogen).</li>
+    <li>Penyimpanan energi jangka panjang dalam bentuk ikatan kimia.</li>
+    <li>Keunggulan lingkungan ketika dievaluasi dengan metrik LCOD.</li>
   </ol>
 
-  <!-- ===== VII. PERSAMAAN ===== -->
-  <h2 id="bab7">VII. Persamaan-Persamaan Kunci</h2>
-  <table>
-    <caption>Rangkuman persamaan tata kelola sistem PV-EC.</caption>
-    <thead><tr><th>No.</th><th>Persamaan</th><th>Keterangan</th></tr></thead>
-    <tbody>
-      <tr><td>1.1</td><td>\(P = V \times I\)</td><td>Daya keluaran panel surya</td></tr>
-      <tr><td>1.2</td><td>\(\Delta G = -nFE\)</td><td>Korelasi elektrokimia Nernst</td></tr>
-      <tr><td>1.3</td><td>2H₂O → O₂ + 4H⁺ + 4e⁻</td><td>Reaksi anoda (OER)</td></tr>
-      <tr><td>1.4</td><td>CO₂ + 6H⁺ + 6e⁻ → CH₃OH + H₂O</td><td>Reaksi katoda (CO₂RR)</td></tr>
-      <tr><td>1.5</td><td>CO₂ + 2KOH → K₂CO₃ + H₂O</td><td>Penangkapan karbon (DAC)</td></tr>
-      <tr><td>1.6</td><td>\(\eta_\text{total} = \eta_\text{PV} \times \eta_\text{EC}\)</td><td>Efisiensi total sistem PV-EC</td></tr>
-      <tr><td>1.7</td><td>\(P_\text{loss} = I^2 \times R\)</td><td>Disipasi energi ohmik (Hukum Joule)</td></tr>
-    </tbody>
-  </table>
+  <h4 id="s412">4.1.2 Kelemahan dan Kendala</h4>
+  <ol>
+    <li>Efisiensi total rendah (sekitar 9%), konsekuensi rantai konversi <em>sun-to-fuel</em> yang panjang.</li>
+    <li>Rugi fotovoltaik dominan (sekitar 83%), dibatasi Batas Shockley-Queisser dan diperparah efek termal
+    tropis.</li>
+    <li>Overpotensial anoda besar, akibat kinetika OER empat elektron.</li>
+    <li>Selektivitas katoda terbatas (60% metanol; 40% terdiversi ke HER).</li>
+    <li>Beban regenerasi DAC dan konsumsi air tinggi (sekitar 4,7 kg H₂O per kg CO₂).</li>
+    <li>Ketergantungan musim/cuaca dan biaya investasi awal (CAPEX) tinggi.</li>
+  </ol>
 
-  <!-- ===== VIII. KONSTANTA ===== -->
-  <h2 id="bab8">VIII. Konstanta dan Parameter Penting</h2>
-  <table>
-    <caption>Konstanta dan parameter acuan yang digunakan dalam kajian.</caption>
-    <thead><tr><th>Parameter</th><th>Nilai</th><th>Keterangan</th></tr></thead>
-    <tbody>
-      <tr><td>Batas Shockley-Queisser</td><td>sekitar 33%</td><td>Efisiensi maksimum sel surya silikon tunggal</td></tr>
-      <tr><td>Tegangan teoritis pemecahan air</td><td>1,23 V</td><td>Minimum termodinamika</td></tr>
-      <tr><td>ΔG° pemecahan air</td><td>237,13 kJ per mol</td><td>Energi bebas Gibbs standar</td></tr>
-      <tr><td>Konsumsi air L-DAC</td><td>sekitar 4,7 ton H₂O per ton CO₂</td><td>Kelemahan fisik sistem</td></tr>
-      <tr><td>Energi desalinasi surya</td><td>sekitar 3,5 kWh per ton H₂O</td><td>Kebutuhan energi rendah</td></tr>
-      <tr><td>Jarak ideal ke laut</td><td>kurang dari 100 km</td><td>Untuk integrasi desalinasi</td></tr>
-      <tr><td>Waktu pengisian surya</td><td>sekitar 6 jam per hari</td><td>Jadwal suplai DC fluktuatif</td></tr>
-    </tbody>
-  </table>
+  <h4 id="s413">4.1.3 Penutup</h4>
+  <p>Simulasi dengan model fisika lengkap membuktikan bahwa sistem PV-EC layak secara fisis namun belum optimal.
+  Pada konfigurasi 10 m², sistem mampu menghasilkan sekitar 453 kg O₂ per tahun, menangkap sekitar 249 kg CO₂
+  per tahun (menjadi metanol), serta memproduksi sekitar 23 kg H₂ per tahun, dengan efisiensi
+  <em>sun-to-fuel</em> sekitar 9% (η_net sekitar 9,1% setelah memperhitungkan beban DAC). Arah perbaikan utama
+  yang direkomendasikan, selaras dengan literatur, meliputi: fungsionalisasi katalis nanopartikel untuk menekan
+  overpotensial dan menaikkan selektivitas CO₂RR; optimalisasi MPPT; integrasi panas surya terkonsentrasi untuk
+  kalsinasi DAC; serta penempatan fasilitas di wilayah pesisir yang terintegrasi unit desalinasi surya guna
+  memenuhi kebutuhan air.</p>
+
+  <h3 id="s42">4.2 Rekomendasi</h3>
+  <p>Sebagai model tingkat konsep, beberapa penyederhanaan perlu dinyatakan secara eksplisit:</p>
+  <ol>
+    <li><strong>Profil iradiasi ideal.</strong> Profil setengah-sinus menghasilkan ekuivalen <em>peak sun
+    hours</em> yang sedikit optimis dibandingkan kondisi tropis nyata; belum menggunakan data meteorologi
+    terukur (misalnya NASA POWER/PVGIS).</li>
+    <li><strong>Kinetika tersederhanakan.</strong> Pendekatan Tafel akurat pada rapat arus tinggi namun
+    melebih-lebihkan overpotensial pada arus rendah; model Butler-Volmer penuh akan lebih representatif.</li>
+    <li><strong>Selektivitas tetap.</strong> Faktor φ = 60% dianggap konstan, padahal secara nyata bergantung
+    pada potensial, jenis katalis, dan konsentrasi reaktan.</li>
+    <li><strong>Regenerasi DAC tersederhanakan.</strong> Energi kalsinasi dimodelkan sebagai konstanta spesifik
+    (kWh per kg), belum mencakup dinamika perpindahan kalor penuh.</li>
+    <li><strong>Tanpa penyimpanan.</strong> Sistem belum memodelkan baterai untuk operasi malam, padahal pasokan
+    surya hanya tersedia sekitar 6 jam efektif per hari.</li>
+  </ol>
+  <p>Keterbatasan ini tidak membatalkan kesimpulan utama, melainkan menunjukkan arah pengembangan lanjutan.</p>
+
+  <!-- ============================================================= -->
+  <!-- DAFTAR PUSTAKA                                                 -->
+  <!-- ============================================================= -->
+  <h2 id="pustaka">Daftar Pustaka</h2>
+  <ol>
+    <li>Prats-Salvado, E., Jagtap, N., Monnerie, N., dan Sattler, C. (2024). Solar-Powered Direct Air Capture:
+    Techno-Economic and Environmental Assessment. <em>Environmental Science and Technology, 58</em>(5), 2282
+    sampai 2292.</li>
+    <li>Keith, D. W., Holmes, G., St. Angelo, D., dan Heidel, K. (2018). A Process for Capturing CO₂ from the
+    Atmosphere. <em>Joule, 2</em>(8), 1573 sampai 1594.</li>
+    <li>Nosaka, Y. (2023). Molecular Mechanisms of Oxygen Evolution Reactions for Artificial Photosynthesis.
+    <em>Oxygen, 3</em>(1), 146 sampai 163.</li>
+    <li>Martí, G., Mallón, L., Romero, N., dkk. (2023). Surface-Functionalized Nanoparticles as Catalysts for
+    Artificial Photosynthesis. <em>Advanced Energy Materials, 13</em>(21), 2300282.</li>
+    <li>Whang, D. R., dan Apaydin, D. H. (2018). Artificial Photosynthesis: Learning from Nature.
+    <em>ChemPhotoChem, 2</em>(2), 148 sampai 160.</li>
+    <li>Wang, Q., dan Pornrungroj, C. (2025). Artificial photosynthetic processes using carbon dioxide, water
+    and sunlight. <em>Chemical Science, 16</em>(1), 18990 sampai 19011.</li>
+    <li>Rudiyanto, B., Rachmanita, R. E., dan Budiprasojo, A. (2023). <em>Dasar-dasar Pemasangan Panel
+    Surya</em>. Unisma Press.</li>
+    <li>Wibowo, A. (2023). <em>Instalasi Panel Listrik Surya</em>. Yayasan Prima Agus Teknik.</li>
+    <li>Rauf, R., Ritnawati, Rachim, F., dkk. (2023). <em>Matahari sebagai Energi Masa Depan: Panduan Lengkap
+    PLTS</em>. Yayasan Kita Menulis.</li>
+  </ol>
 
   <footer>
-    Dokumentasi Analisis dan Sintesis Proyek PV-EC. Proyek Akhir Pengantar Energi, Program Studi Fisika,
-    Kelompok 3 (PFEL). Gambar dihasilkan dari simulasi numerik (<code>Simulasi.py</code>,
+    Dokumentasi laporan Integrasi Panel Surya pada Sistem Carbon Capture untuk Konversi CO₂ menjadi Oksigen
+    melalui Artificial Photosynthesis. Proyek Akhir Mata Kuliah Pengantar Energi, Program Studi S1 Fisika,
+    Universitas Padjadjaran, Kelompok 3 (PFEL). Gambar dihasilkan dari simulasi numerik (<code>Simulasi.py</code>,
     <code>Simulasi_Tahunan.py</code>, <code>Dashboard_Simulasi.py</code>, dan <code>Poster_Grafik.py</code>).
   </footer>
 
